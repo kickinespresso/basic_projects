@@ -1,7 +1,6 @@
 require 'bootstrap-sass'
 require 'friendly_id'
 require 'simple_form'
-require 'activeadmin'
 
 module BasicProjects
   class Engine < ::Rails::Engine
@@ -16,6 +15,12 @@ module BasicProjects
       g.test_framework      :rspec
       g.fixture_replacement :factory_girl, :dir => 'spec/factories'
     end
+
+    initializer :basic_projects do
+      ActiveAdmin.application.load_paths += Dir[File.dirname(__FILE__) + '/admin']
+    end
+
+
 
   end
 end
