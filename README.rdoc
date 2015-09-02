@@ -1,3 +1,10 @@
 = BasicProjects
 
 This project rocks and uses MIT-LICENSE.
+
+
+= Scaffold
+
+
+    rails g scaffold category title:string description:text slug:string:uniq
+    rails g scaffold project title:string lead:string excerpt:text description:text content:text project_link:string image:string slug:string:uniq  category:references position:integer
