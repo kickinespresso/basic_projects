@@ -9,8 +9,9 @@ class CreateBasicProjectsProjects < ActiveRecord::Migration
       t.string :project_link
       t.string :image
       t.string :slug
-      t.references :category, index: true, foreign_key: true
+      #t.references :category, index: true, foreign_key: true
       t.integer :position
+      t.integer :category_id
 
       t.timestamps null: false
     end
