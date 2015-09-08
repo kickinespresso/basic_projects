@@ -1,5 +1,8 @@
 = BasicProjects
 
+[![Build Status](https://semaphoreci.com/api/v1/projects/ca231f16-c6a5-48de-8188-1b019bdc3d85/529792/badge.svg)](https://semaphoreci.com/kickinespresso/basic_projects)
+
+
 This project rocks and uses MIT-LICENSE.
 
 
