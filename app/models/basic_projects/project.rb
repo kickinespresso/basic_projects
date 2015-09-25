@@ -3,6 +3,6 @@ module BasicProjects
     belongs_to :category
     extend FriendlyId
     friendly_id :title, use: [:slugged, :finders]
-    validates_presence_of :title, :description, :slug
+    validates_presence_of :title, :description, :slug, :category
   end
 end

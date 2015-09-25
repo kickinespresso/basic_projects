@@ -1,1 +1,1 @@
-Rails.application.config.assets.precompile += %w(  basic_projects/application.js  ckeditor/*   )
+Rails.application.config.assets.precompile += %w(  basic_projects/application.js  ckeditor/*  admin/basic_projects.js )

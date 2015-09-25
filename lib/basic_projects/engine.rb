@@ -7,9 +7,9 @@ module BasicProjects
     require 'jquery-rails'
     require 'jquery-ui-rails'
     require 'ckeditor'
+    require 'activeadmin'
 
     isolate_namespace BasicProjects
-
 
     config.generators do |g|
       g.test_framework      :rspec
@@ -19,8 +19,6 @@ module BasicProjects
     initializer :basic_projects do
       ActiveAdmin.application.load_paths += Dir[File.dirname(__FILE__) + '/admin']
     end
-
-
 
   end
 end
