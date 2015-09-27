@@ -18,9 +18,14 @@ if defined?(ActiveAdmin)
         f.input :lead
         f.input :excerpt
         f.input :description
-        f.input :content
+        f.cktext_area :content
         f.input :position
         f.input :project_link
+      end
+
+      f.inputs "Image", :multipart => true do
+        f.input :image, :as => :file, :hint => f.object.image.present? ? image_tag(f.object.image.url(:thumb)) : content_tag(:span, "no image yet")
+        f.input :image_cache, :as => :hidden
       end
 
       f.actions         # adds the 'Submit' and 'Cancel' buttons
