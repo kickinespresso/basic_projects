@@ -11,3 +11,6 @@ This project rocks and uses MIT-LICENSE.
 
     rails g scaffold category title:string description:text slug:string:uniq -c=scaffold_controller
     rails g scaffold project title:string lead:string excerpt:text description:text content:text project_link:string image:string slug:string:uniq  category:references position:integer -c=scaffold_controller
+    
+    
+    Add   mount Ckeditor::Engine => '/ckeditor'
